@@ -10,6 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    @media (min-width: 901px) {
+      .intro-grid { grid-template-columns: 120px 280px minmax(0, 1fr) !important; gap: 36px !important; align-items: start !important; }
+      .intro .credentials { grid-column: 2 / -1 !important; display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 34px !important; width: auto !important; padding: 30px 0 0 !important; border-left: 0 !important; border-top: 1px solid var(--line) !important; }
+      .intro .credential { min-width: 0 !important; }
+      .intro .credential p { max-width: 220px !important; }
+    }
+  </style>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
